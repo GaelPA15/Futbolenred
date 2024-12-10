@@ -49,7 +49,7 @@ export default function Home() {
         <div className="mt-6 flex flex-col lg:flex-row items-center gap-6">
           <div className="lg:w-1/2">
             <img
-              src="https://www.futboltotal.com.mx/wp-content/uploads/2021/05/tecos-liga-premier.jpg"
+              src="https://www.uag.mx/contenido/COHkazTECB/t_tecos-vs-leones-negros_iJ6.jpg"
               alt="Jugadores de fútbol celebrando"
               className="rounded-lg shadow-lg"
             />

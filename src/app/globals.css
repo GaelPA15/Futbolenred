@@ -91,8 +91,23 @@ button:active {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  /* Ajustes para móviles */
+  body {
+    font-size: 14px; /* Ajustar tamaño base de fuente */
+  }
+
   .container {
-    padding-left: 1rem;
+    padding-left: 1rem; /* Reducir padding en dispositivos pequeños */
     padding-right: 1rem;
+  }
+
+  img {
+    max-width: 100%; /* Hacer imágenes fluidas */
+    height: auto; /* Mantener proporciones */
+  }
+
+  button {
+    width: 100%; /* Asegurar accesibilidad en móviles */
+    text-align: center;
   }
 }
