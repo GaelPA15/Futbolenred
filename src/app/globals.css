@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables de Color para Tema Claro y Oscuro */
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+  --primary-color: #1D4ED8; /* Azul más formal */
+  --secondary-color: #6B7280; /* Gris más suave */
+  --accent-color: #10B981; /* Verde sutil para resaltar */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #d1d5db;
+    --primary-color: #3B82F6; /* Azul más brillante */
+    --secondary-color: #9CA3AF; /* Gris más claro */
+    --accent-color: #34D399; /* Verde más brillante */
+  }
+}
+
+/* Estilo global para el cuerpo */
+body {
+  @apply font-sans antialiased;
+  color: var(--foreground) !important;
+  background-color: var(--background) !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Reseteo básico de márgenes y paddings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Estilo para enlaces */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+/* Botones */
+button {
+  @apply px-6 py-2 rounded-lg font-semibold;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Contenedor */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
