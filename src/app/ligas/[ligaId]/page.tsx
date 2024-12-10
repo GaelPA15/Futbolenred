@@ -1,7 +1,8 @@
 // src/app/ligas/[ligaId]/page.tsx
+import { Metadata } from 'next';
 
 interface LigaDetailsPageProps {
-  params: { ligaId: "futbol7" | "nocturna" | "infantil" | "universitaria" | "femenil" | "master" };
+  params: { ligaId: 'futbol7' | 'nocturna' | 'infantil' | 'universitaria' | 'femenil' | 'master' };
 }
 
 export default function LigaDetailsPage({ params }: LigaDetailsPageProps) {
