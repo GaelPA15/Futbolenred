@@ -1,7 +1,5 @@
 // src/app/ligas/[ligaId]/page.tsx
 
-import { useParams } from 'next/navigation';
-
 interface LigaDetailsPageProps {
   params: { ligaId: "futbol7" | "nocturna" | "infantil" | "universitaria" | "femenil" | "master" };
 }
