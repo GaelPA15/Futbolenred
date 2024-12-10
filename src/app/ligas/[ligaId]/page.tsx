@@ -1,5 +1,7 @@
 // src/app/ligas/[ligaId]/page.tsx
 
+import { useParams } from 'next/navigation';
+
 interface LigaDetailsPageProps {
   params: { ligaId: "futbol7" | "nocturna" | "infantil" | "universitaria" | "femenil" | "master" };
 }
@@ -52,15 +54,13 @@ export default function LigaDetailsPage({ params }: LigaDetailsPageProps) {
     },
   };
 
-  // Obtener los datos de la liga según el parametro 'ligaId'
   const liga = ligas[params.ligaId];
 
-  // Verificar si la liga existe
   if (!liga) {
     return <p className="text-center mt-12">Liga no encontrada.</p>;
   }
 
-  // Verificar si la liga tiene la propiedad 'informacionAdicional'
+  // Verificar si la liga tiene la propiedad informacionAdicional
   const tieneInformacionAdicional = 'informacionAdicional' in liga;
 
   return (
