@@ -39,7 +39,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Estilo para enlaces */
+/* Enlaces */
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -89,25 +89,27 @@ button:active {
   padding-right: 1.5rem;
 }
 
-/* Media Queries */
+/* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
-  /* Ajustes para móviles */
   body {
-    font-size: 14px; /* Ajustar tamaño base de fuente */
+    font-size: 14px;
   }
 
   .container {
-    padding-left: 1rem; /* Reducir padding en dispositivos pequeños */
-    padding-right: 1rem;
+    padding: 0 1rem; /* Reducir el espacio lateral */
   }
 
   img {
-    max-width: 100%; /* Hacer imágenes fluidas */
-    height: auto; /* Mantener proporciones */
+    max-width: 100%;
+    height: auto; /* Escalar las imágenes proporcionalmente */
   }
 
   button {
-    width: 100%; /* Asegurar accesibilidad en móviles */
+    width: 100%; /* Botones anchos en móviles */
     text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem; /* Reducir encabezados */
   }
 }
