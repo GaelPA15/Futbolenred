@@ -14,7 +14,7 @@ export default function Login() {
   };
 
   const handleForgotPassword = () => {
-    router.push("/olvide-mi-contraseña"); // Redirige a la página de recuperación de contraseña
+    router.push("/olvide-mi-contrasena"); // Redirige a la página de recuperación de contraseña
   };
 
   const handleRegister = () => {
@@ -73,7 +73,7 @@ export default function Login() {
               </label>
             </div>
             <a
-              href="#"
+              href="/olvide-mi-contrasena"
               onClick={handleForgotPassword}
               className="text-sm text-green-400 hover:underline"
             >
@@ -113,17 +113,27 @@ export default function Login() {
               </p>
             </div>
             <div className="flex space-x-4">
-              <a href="#inicio" className="text-sm hover:underline">Inicio</a>
-              <a href="#comunidad" className="text-sm hover:underline">Comunidad</a>
-              <a href="#entrenamiento" className="text-sm hover:underline">¿Por qué nosotros?</a>
-              <a href="#lugares" className="text-sm hover:underline">Más información</a>
+              <a href="#inicio" className="text-sm hover:underline">
+                Inicio
+              </a>
+              <a href="#comunidad" className="text-sm hover:underline">
+                Comunidad
+              </a>
+              <a href="#entrenamiento" className="text-sm hover:underline">
+                ¿Por qué nosotros?
+              </a>
+              <a href="#lugares" className="text-sm hover:underline">
+                Más información
+              </a>
             </div>
             <div>
               <p className="text-sm">Contacto: info@futbolenred.com</p>
               <p className="text-sm">Teléfono: +52 555 123 4567</p>
             </div>
           </div>
-          <p className="text-center text-sm mt-4">© 2024 FutbolEnRed. Todos los derechos reservados.</p>
+          <p className="text-center text-sm mt-4">
+            © 2024 FutbolEnRed. Todos los derechos reservados.
+          </p>
         </div>
       </footer>
     </section>
