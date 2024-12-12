@@ -93,7 +93,7 @@ export default function Login() {
           <p className="text-sm text-gray-300">
             ¿No tienes una cuenta?{" "}
             <a
-              href="#"
+              href="/registro"
               onClick={handleRegister}
               className="text-green-400 hover:underline"
             >
